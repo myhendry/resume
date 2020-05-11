@@ -1,1 +1,8 @@
-Barebone Gatsby + Typescript + Semantic-UI-React + Apollo Graphql Starter
+**Packages Used**
+
+- Gatsby
+- Typescript
+- Semantic-UI-React
+- Apollo Graphql
+
+---
