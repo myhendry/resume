@@ -1,5 +1,6 @@
 import React from "react"
 import Lottie from "react-lottie"
+
 import animationData from "./smiley.json"
 
 export class LottieControl extends React.Component {
@@ -14,7 +15,7 @@ export class LottieControl extends React.Component {
     }
 
     return (
-      <div>
+      <div style={{ height: "100vh" }}>
         <Lottie options={defaultOptions} height={400} width={400} />
       </div>
     )

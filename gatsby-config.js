@@ -3,7 +3,7 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     title: `Starter`,
-    description: `Barebone Gatsby + Typescript + Semantic-UI-React + Apollo Graphql Starter`,
+    description: `Gatsby + Typescript + Semantic-UI-React + Apollo Graphql Starter`,
     author: `@hl`,
   },
   plugins: [
