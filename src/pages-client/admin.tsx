@@ -1,9 +1,10 @@
 import React from "react"
 import { RouteComponentProps } from "@reach/router"
 
+import { motion } from "framer-motion"
 import { useHelloQuery } from "../__generated__/graphql"
 
-interface Props extends RouteComponentProps {}
+type Props = RouteComponentProps
 
 const Admin: React.FC<Props> = () => {
   const { loading, error, data } = useHelloQuery()
@@ -15,7 +16,7 @@ const Admin: React.FC<Props> = () => {
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
 
-      <h3>Admin</h3>
+      <motion.h2 animate={{ fontSize: 50 }}>Welcome</motion.h2>
     </div>
   )
 }
