@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Button } from "semantic-ui-react"
 import Img from "gatsby-image"
 import styled from "styled-components"
-
+import { motion } from "framer-motion"
 import { Layout, SEO } from "../components/common"
 import { Introduction } from "../modules/Introduction"
 import { LottieControl } from "../modules/Lottie"
@@ -36,7 +36,7 @@ const IndexPage = () => {
           <Button secondary>Client</Button>
         </AnchorLink>
       </div>
-
+      <motion.h2 animate={{ fontSize: 50 }}>Welcome</motion.h2>
       <Image fluid={data.file.childImageSharp.fluid} />
       <LottieControl />
       <Introduction />
