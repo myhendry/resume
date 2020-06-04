@@ -1,13 +1,13 @@
 import React from "react"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { graphql, useStaticQuery } from "gatsby"
-import { Button } from "semantic-ui-react"
+
 import Img from "gatsby-image"
 import styled from "styled-components"
 import { motion } from "framer-motion"
 import { Layout, SEO } from "../components/common"
 import { Introduction } from "../modules/Introduction"
 import { LottieControl } from "../modules/Lottie"
+import { Divider } from "semantic-ui-react"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -25,19 +25,12 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div>
-        <AnchorLink to="/#anchor-intro" title="Intro">
-          <Button primary>Introduction</Button>
-        </AnchorLink>
-        <AnchorLink to="/page-2" title="Static P2">
-          <Button secondary>Static P2</Button>
-        </AnchorLink>
-        <AnchorLink to="/app/admin" title="Client">
-          <Button secondary>Client</Button>
-        </AnchorLink>
-      </div>
+
+      <ImageBox>
+        <Image fluid={data.file.childImageSharp.fluid} />
+      </ImageBox>
+      <Divider />
       <motion.h2 animate={{ fontSize: 50 }}>Welcome</motion.h2>
-      <Image fluid={data.file.childImageSharp.fluid} />
       <LottieControl />
       <Introduction />
       <Introduction />
@@ -51,6 +44,12 @@ const Image = styled(Img)`
   height: 100px;
   border-radius: 20px;
   margin: 20px;
+`
+
+const ImageBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 export default IndexPage

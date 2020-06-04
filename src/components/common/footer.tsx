@@ -1,7 +1,12 @@
 import React from "react"
+import styled from "styled-components"
 
 export const Footer = () => (
-  <div>
+  <Foot>
     © {new Date().getFullYear()} <a href="https://github.com/myhendry">HL</a>
-  </div>
+  </Foot>
 )
+
+const Foot = styled.div`
+  text-align: center;
+`

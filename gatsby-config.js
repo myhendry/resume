@@ -2,7 +2,7 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `Starter`,
+    title: `HL`,
     description: `Gatsby + Typescript + Semantic-UI-React + Apollo Graphql Starter`,
     author: `@hl`,
   },
