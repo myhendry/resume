@@ -13,7 +13,7 @@ export const Header: React.FC<HeaderProps> = ({
     <Title>
       <h1>{siteTitle}</h1>
     </Title>
-    <Nav>
+    {/* <Nav>
       <NavLink to="/#anchor-intro" title="Intro">
         <Button primary>Introduction</Button>
       </NavLink>
@@ -26,7 +26,7 @@ export const Header: React.FC<HeaderProps> = ({
       <NavLink to="/app/admin" title="Client">
         <Button secondary>Client</Button>
       </NavLink>
-    </Nav>
+    </Nav> */}
   </Head>
 )
 
@@ -36,6 +36,7 @@ const Head = styled.div`
 `
 const Title = styled.div`
   margin: 0 30px;
+  color: #fff;
 `
 
 const Nav = styled.nav`

@@ -2,8 +2,8 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `HL`,
-    description: `Gatsby + Typescript + Semantic-UI-React + Apollo Graphql Starter`,
+    title: `H`,
+    description: `Imagine`,
     author: `@hl`,
   },
   plugins: [
@@ -19,6 +19,21 @@ module.exports = {
       options: {
         name: `images`,
         path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: "Metal Mania",
+          },
+          {
+            family: "Roboto Slab",
+            variable: true,
+            weights: ["200..900"],
+          },
+        ],
       },
     },
     {
