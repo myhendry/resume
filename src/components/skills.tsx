@@ -23,69 +23,66 @@ export const Skills: React.FC<SkillsProps> = () => {
 
   return (
     <Wrapper>
-      <Box1>
-        <ImageBox>
-          <Image fluid={data.file.childImageSharp.fluid} />
-        </ImageBox>
-      </Box1>
-      <Box2 id="intro">
-        <motion.h2 style={{ color: "black" }} animate={{ fontSize: 50 }}>
-          Imagine
-        </motion.h2>
-      </Box2>
-      <Box3>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-        ducimus enim, labore illo hic explicabo nisi, eos omnis provident
-        inventore placeat soluta. Blanditiis ab modi quisquam, nemo omnis porro
-        asperiores.
-      </Box3>
-      <Box4>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid optio
-        ratione recusandae vero sint illum maxime officia amet cumque!
-      </Box4>
-      <Box5>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid optio
-        ratione recusandae vero sint illum maxime officia amet cumque!
-      </Box5>
-      <Box6>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid optio
-        ratione recusandae vero sint illum maxime officia amet cumque!
-      </Box6>
-      <Box7>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-        ducimus enim, labore illo hic explicabo nisi, eos omnis provident
-        inventore placeat soluta. Blanditiis ab modi quisquam, nemo omnis porro
-        asperiores.
-      </Box7>
-      <Box8>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid optio
-        ratione recusandae vero sint illum maxime officia amet cumque!
-      </Box8>
-      <Box9>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid optio
-        ratione recusandae vero sint illum maxime officia amet cumque!
-      </Box9>
-      <Box10>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-        ducimus enim, labore illo hic explicabo nisi, eos omnis provident
-        inventore placeat soluta. Blanditiis ab modi quisquam, nemo omnis porro
-        asperiores.
-      </Box10>
+      <ul>
+        <Box1>
+          <ImageBox>
+            <Image fluid={data.file.childImageSharp.fluid} />
+          </ImageBox>
+        </Box1>
+        <Box2 id="intro">
+          <motion.h2 style={{ color: "black" }} animate={{ fontSize: 38 }}>
+            Career
+          </motion.h2>
+        </Box2>
+        <Box3>
+          Graduated National University Singapore, Majoring Business Finance
+        </Box3>
+        <Box4>Account Manager Mediatech Marketing Pte Ltd</Box4>
+        <Box5>Account Manager Elpida Memory Pte Ltd</Box5>
+        <Box6>Associate Director Propnex Realty Pte Ltd</Box6>
+        <Box7>
+          <motion.h2 style={{ color: "black" }} animate={{ fontSize: 38 }}>
+            Skills
+          </motion.h2>
+        </Box7>
+        <Box8>ReactJS</Box8>
+        <Box9>Express & Node</Box9>
+        <Box10>GraphQL</Box10>
+        <Box10>MongoDB</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+        <Box10>PostgreSQL</Box10>
+      </ul>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
   z-index: 10;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  /* grid-column-gap: 1em;
-  grid-row-gap: 1em; */
-  grid-gap: 0.5em;
   margin: 1rem;
-  grid-auto-rows: minmax(150px, auto);
-  /* justify-items: stretch;
-  align-items: stretch; */
+  > ul {
+    display: grid;
+    grid-auto-rows: minmax(120px, auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-column-gap: 1em;
+  grid-row-gap: 1em; */
+    grid-gap: 0.5em;
+  }
+
+  @media screen and (max-width: 700px) {
+    > ul {
+      grid-template-columns: 1fr;
+    }
+  }
 `
 
 const Box1 = styled.div`
@@ -93,7 +90,7 @@ const Box1 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 `
 
 const Box2 = styled.div`
@@ -101,59 +98,61 @@ const Box2 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  grid-column: 2/4;
+  padding: 10px;
+  /* grid-column: ; */
 `
 
 const Box3 = styled.div`
-  background-color: greenyellow;
+  background-color: gold;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  grid-column: 1/3;
+  padding: 10px;
+
+  /* grid-column: 1/3; */
 `
 
 const Box4 = styled.div`
-  background-color: blueviolet;
+  background-color: yellow;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  grid-column: 3;
+  padding: 10px;
+  /* grid-column: 3; */
   /* grid-row: 1/2; */
 `
 
 const Box5 = styled.div`
-  background-color: greenyellow;
+  background-color: pink;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 `
 
 const Box6 = styled.div`
-  background-color: greenyellow;
+  background-color: lime;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 `
 
 const Box7 = styled.div`
-  background-color: greenyellow;
+  background-color: orange;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 `
 
 const Box8 = styled.div`
-  background-color: greenyellow;
+  background-color: limegreen;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
+  grid-column: 2/4;
 `
 
 const Box9 = styled.div`
@@ -161,15 +160,15 @@ const Box9 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 `
 
 const Box10 = styled.div`
-  background-color: greenyellow;
+  background-color: skyblue;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 `
 
 const ImageBox = styled.div`
@@ -179,8 +178,13 @@ const ImageBox = styled.div`
 `
 
 const Image = styled(Img)`
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 15px;
-  margin: 20px;
+  margin: 5px;
+`
+
+const Divider = styled.div`
+  width: 80%;
+  border-bottom: 1px solid grey;
 `
