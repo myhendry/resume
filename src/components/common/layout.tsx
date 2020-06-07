@@ -51,7 +51,7 @@ export const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
   return (
     <>
       <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <Container>
         <main>{props.children}</main>
       </Container>
