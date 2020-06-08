@@ -29,14 +29,12 @@ export const Skills: React.FC<SkillsProps> = () => {
             <Image fluid={data.file.childImageSharp.fluid} />
           </ImageBox>
         </Box1>
-        <Box2 id="intro">
+        <Box7 id="intro">
           <motion.h2 style={{ color: "black" }} animate={{ fontSize: 38 }}>
             Career
           </motion.h2>
-        </Box2>
-        <Box3>
-          Graduated National University Singapore, Majoring Business Finance
-        </Box3>
+        </Box7>
+        <Box3>Graduated National University Singapore Business Finance</Box3>
         <Box4>Account Manager Mediatech Marketing Pte Ltd</Box4>
         <Box5>Account Manager Elpida Memory Pte Ltd</Box5>
         <Box6>Associate Director Propnex Realty Pte Ltd</Box6>
@@ -46,21 +44,25 @@ export const Skills: React.FC<SkillsProps> = () => {
           </motion.h2>
         </Box7>
         <Box8>ReactJS</Box8>
+        <Box10>Gatsby JS</Box10>
         <Box9>Express & Node</Box9>
-        <Box10>GraphQL</Box10>
+        <Box4>GraphQL</Box4>
         <Box10>MongoDB</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
-        <Box10>PostgreSQL</Box10>
+        <Box11>PostgreSQL</Box11>
+        <Box12>Typescript</Box12>
+        <Box13>Rust (In Progress)</Box13>
+        <Box14>Facebook Marketing</Box14>
+        <Box7>
+          <motion.h2 style={{ color: "black" }} animate={{ fontSize: 38 }}>
+            Portfolio
+          </motion.h2>
+        </Box7>
+        <Box15>https://www.corporatespace.biz/</Box15>
+        <Box16>https://hendry-gql-server.herokuapp.com/graphql</Box16>
+        <Box9>Facebook ML5 & Tensorflow JS</Box9>
+        <Box5>4Jobs (Ceased)</Box5>
+        <Box2></Box2>
+        {/* <Box10></Box10> */}
       </ul>
     </Wrapper>
   )
@@ -169,6 +171,50 @@ const Box10 = styled.div`
   align-items: center;
   justify-content: center;
   padding: 10px;
+`
+const Box11 = styled.div`
+  background-color: #c7d66d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+`
+const Box12 = styled.div`
+  background-color: #5299d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+`
+const Box13 = styled.div`
+  background-color: #beb8eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+`
+const Box14 = styled.div`
+  background-color: #94c5dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+`
+const Box15 = styled.div`
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+`
+
+const Box16 = styled.div`
+  background-color: #53ff45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  grid-column: 2/4;
 `
 
 const ImageBox = styled.div`
