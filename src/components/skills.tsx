@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import { FaUser, FaBriefcase, FaInbox } from "react-icons/fa"
 
 interface SkillsProps {
   a?: string
@@ -30,18 +31,14 @@ export const Skills: React.FC<SkillsProps> = () => {
           </ImageBox>
         </Box1>
         <Box7 id="intro">
-          <motion.h2 style={{ color: "black" }} animate={{ fontSize: 38 }}>
-            Career
-          </motion.h2>
+          <FaUser size={"3rem"} color="white" />
         </Box7>
         <Box3>Graduated National University Singapore Business Finance</Box3>
         <Box4>Account Manager Mediatech Marketing Pte Ltd</Box4>
         <Box5>Account Manager Elpida Memory Pte Ltd</Box5>
         <Box6>Associate Director Propnex Realty Pte Ltd</Box6>
         <Box7>
-          <motion.h2 style={{ color: "black" }} animate={{ fontSize: 38 }}>
-            Skills
-          </motion.h2>
+          <FaBriefcase size={"3rem"} color="white" />
         </Box7>
         <Box8>ReactJS</Box8>
         <Box10>Gatsby JS</Box10>
@@ -54,9 +51,7 @@ export const Skills: React.FC<SkillsProps> = () => {
         <Box4>Sales</Box4>
         <Box14>Facebook Marketing</Box14>
         <Box7>
-          <motion.h2 style={{ color: "black" }} animate={{ fontSize: 38 }}>
-            Portfolio
-          </motion.h2>
+          <FaInbox size={"3rem"} color="white" />
         </Box7>
         <Box15>
           <a
