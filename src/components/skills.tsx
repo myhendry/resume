@@ -51,18 +51,60 @@ export const Skills: React.FC<SkillsProps> = () => {
         <Box11>PostgreSQL</Box11>
         <Box12>Typescript</Box12>
         <Box13>Rust (In Progress)</Box13>
+        <Box4>Sales</Box4>
         <Box14>Facebook Marketing</Box14>
         <Box7>
           <motion.h2 style={{ color: "black" }} animate={{ fontSize: 38 }}>
             Portfolio
           </motion.h2>
         </Box7>
-        <Box15>https://www.corporatespace.biz/</Box15>
-        <Box16>https://hendry-gql-server.herokuapp.com/graphql</Box16>
-        <Box9>Facebook ML5 & Tensorflow JS</Box9>
-        <Box5>4Jobs (Ceased)</Box5>
-        <Box2></Box2>
-        {/* <Box10></Box10> */}
+        <Box15>
+          <a
+            href="https://www.corporatespace.biz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Corporate Space
+          </a>
+        </Box15>
+        <Box16>
+          <a
+            href="https://hendry-gql-server.herokuapp.com/graphql"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GQL Server
+          </a>
+        </Box16>
+        <Box9>
+          <a
+            href="https://www.facebook.com/groups/856370754717615"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook ML5 & Tensorflow JS
+          </a>
+        </Box9>
+        <Box5>4Jobs (Discontinued)</Box5>
+
+        <Box2>
+          <a
+            href="https://stackoverflow.com/users/7285771/hendry-lim"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Stack Overflow
+          </a>
+        </Box2>
+        <Box3>
+          <a
+            href="https://github.com/myhendry"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </Box3>
       </ul>
     </Wrapper>
   )
@@ -73,7 +115,7 @@ const Wrapper = styled.div`
   margin: 1rem;
   > ul {
     display: grid;
-    grid-auto-rows: minmax(120px, auto);
+    grid-auto-rows: minmax(100px, auto);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     /* grid-column-gap: 1em;
   grid-row-gap: 1em; */
@@ -154,7 +196,6 @@ const Box8 = styled.div`
   align-items: center;
   justify-content: center;
   padding: 10px;
-  grid-column: 2/4;
 `
 
 const Box9 = styled.div`
@@ -214,7 +255,6 @@ const Box16 = styled.div`
   align-items: center;
   justify-content: center;
   padding: 10px;
-  grid-column: 2/4;
 `
 
 const ImageBox = styled.div`
